@@ -1,2 +1,2 @@
-# neufert_dashboard
-Data viz dashboard for Neufert 4.0
+# Neufert 4.0 dashboard
+Demo version of Next.js data viz dashboard app for Neufert 4.0
