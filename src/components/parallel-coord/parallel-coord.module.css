@@ -1,0 +1,23 @@
+.plotContainer {
+	border: solid 1px var(--border-col);
+	background: var(--plot-bg);
+}
+
+.paths path {
+	stroke: var(--fill-col);
+	stroke-opacity: .2;
+	fill: none;
+}
+
+.hidden {
+	stroke: #2e2e2e !important;
+	/* stroke-opacity: .05; */
+}
+.axis path {
+	stroke: var(--font-col);
+	fill: none;
+}
+
+.axis text {
+	fill: var(--font-col)
+}

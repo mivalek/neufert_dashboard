@@ -8,7 +8,15 @@ import SpiderPlotSkeleton from '@/components/spider/plot-skeleton'
 export default async function Page(){
     return (
         <main>
-            <h1>Welcome</h1>
+            <h1>Scatter plot</h1>
+            <>
+            <SliderGroup/>
+            <MultiplotContainer
+                width={1000}
+                height={1000}
+            />
+            {/* <DataTable/> */}
+            </>
         </main>
     )
 }

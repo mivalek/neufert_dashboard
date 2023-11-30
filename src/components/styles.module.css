@@ -1,0 +1,56 @@
+.multiplotGrid {
+    display: grid;
+    grid-template-columns: 22px minmax(300px, 570px) minmax(320px, 350px);
+    grid-template-rows: 1fr 22px 210px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1em;
+}
+.plotContainer {
+    grid-column: 2;
+    grid-template-columns: .2fr 1fr;
+    width: calc(100% - 1em);
+    height: 100%;
+    padding-right: 1em;
+    display: grid;
+    background: var(--plot-bg);
+    border: solid 1px var(--border-col);
+}
+.plotContainer text {
+    font-size: 2em;
+}
+.col2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.sideways {
+    grid-column: 1;
+    width: 0;
+    height: 22px;
+    transform: rotate(-90deg);
+}
+.sideways > * {
+        transform: translateX(-50%);
+}
+
+.grid {
+    stroke: var(--grid-col);
+    stroke-width: .5px;
+    /* stroke-opacity: .5; */
+}
+.axis path, .axis line {
+    display: none
+}
+
+.filters {
+    margin: auto;
+    margin-bottom: 1em;
+}
+.sliderContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    width: fit-content;
+    margin: auto;
+}

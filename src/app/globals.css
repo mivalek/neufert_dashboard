@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -104,4 +104,136 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+
+:root {
+  --base-bg-col: #0f1015;
+  --bg-col: #080a10;
+  --fill-col: #226bb4;
+  --complementary-col: #b46b22;
+  --font-col: #fff8;
+  --border-col: #ffffff16;
+  --grid-col: #fff3;
+  --plot-bg: #eeeeee0a;
+  --prediction-col: #ff00b3;
+}
+body {
+  background: var(--base-bg-col);
+  color: var(--font-col);
+  margin: 0;
+}
+#title {
+  border-bottom: solid 1px var(--border-col);
+  padding-block: .5em;
+  margin: 0;
+  padding-inline: 10px;
+  background: #0000002e;
+  height: 100%;
+  grid-column: 1/3;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 140px auto;
+  column-gap: 0;
+}
+#sidebar {
+  height: 0;
+  position: sticky;
+  top: 1em;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  list-style: none;
+  color: var(--font-col);
+  cursor: pointer;
+}
+nav li:hover {
+  color: var(--bg-col);
+  background-color: var(--font-col);
+
+}
+nav a {
+  text-decoration: none;
+  color: inherit; 
+  display: block;
+  padding: 5px 10px;
+}
+#main-container {
+  padding-inline: 20px;
+  background: var(--bg-col);
+  border-left: solid 1px var(--border-col);
+  min-height: calc(100vh - 72px);
+}
+main {
+  max-width: 850px;
+  margin: auto;
+}
+text {
+  user-select: none
+}
+
+#multiplot select {
+  color: var(--font-col);
+  text-align: center;
+  border: solid 1px transparent;
+  background: var(--bg-col);
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+#multiplot select:hover {
+  border-color: var(--border-col);
+}
+
+select > option {
+  text-align: left;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.brush .selection, .scatter .selection {
+  stroke: none;
+  fill: #fff;
+  fill-opacity: .07;
+}
+
+#parallel-coords .brush .selection {
+  stroke: var(--font-col);
+  stroke-opacity: .5;
+  fill-opacity: .1;
+}
+
+.scatter .selection {
+  stroke: var(--font-col);
+  stroke-width: 1.5px;
+}
+
+#x-histogram .handle--e,
+#x-histogram .handle--w {
+  fill: var(--font-col)
+}
+
+#y-histogram .handle--n,
+#y-histogram .handle--s {
+  fill: var(--font-col)
+}
+#parallel-coords .handle--n,
+#parallel-coords .handle--s {
+  stroke: none;
+  fill: var(--font-col);
+  height: 3px;
+}
+
+.MuiSlider-markLabel, .MuiSlider-markLabelActive {
+  color: var(--font-col);
 }

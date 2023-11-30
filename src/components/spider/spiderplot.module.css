@@ -1,0 +1,41 @@
+
+.spider {
+    width: 70%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.spider * {
+    pointer-events: none;
+}
+
+.spider path {
+    fill: none;
+    stroke: var(--grid-col);
+}
+.spider circle {
+    fill: none;
+    stroke: #fff5;
+}
+
+.spider text {
+    stroke: none;
+    fill: var(--font-col);
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.area {
+    fill-opacity: .1;
+}
+
+.area.prediction {
+    fill: var(--prediction-col);
+    stroke: var(--prediction-col)
+}
+
+.area.observation {
+    fill: var(--fill-col);
+    stroke: var(--fill-col)
+}
+

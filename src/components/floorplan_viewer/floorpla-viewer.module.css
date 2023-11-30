@@ -1,0 +1,112 @@
+.floorplanViewer {
+    grid-column: 3;
+    grid-row: 1 / 4;
+    width: 100%;
+    overflow: clip;
+    align-self: start;
+    pointer-events: fill;
+    display: grid;
+    row-gap: 10px;
+}
+
+.hovered .floorplan {
+    display: none;
+}
+
+.detailsGrid {
+    font-size: .8em;
+    margin-top: 2em;
+    display: none;
+}
+
+.hovered .detailsGrid {
+    display: block;
+}
+
+.detailsTable {
+    border-spacing: 15px 0;
+    margin-block: 1em;
+}
+
+.detailsTable th {
+    text-align: start;
+}
+
+.prediction {
+    color: var(--prediction-col);
+    text-align: end;
+    translate: -1em;
+}
+
+.observation {
+    color: var(--fill-col);
+    text-align: end;
+    /* translate: -.5em; */
+}
+
+/* .spin {
+    animation: spin 120s linear infinite;
+}
+
+.spin:has(path:hover) {
+    animation-play-state: paused;
+} */
+
+.area, .shaft {
+    fill: transparent;
+    stroke: none;
+    cursor: pointer;
+}
+.outline {
+    stroke: var(--border-col);
+    stroke-width: 3px;
+}
+.room, .living_dining, .living_room, .bedroom, .dining {
+    /* fill: #ff00b36b; */
+    fill: #5c1046
+}
+.kitchen, .kitchen_dining {
+    /* fill: #baaf00; */
+    fill: #757027
+}
+.bathroom {
+    /* fill: #0080ff; */
+    fill: #053562
+}
+.corridor {
+    /* fill: #fffa; */
+    fill: var(--bg-col);
+    stroke: var(--font-col);
+}
+.balcony, .loggia {
+    fill: transparent;
+    stroke: #fff !important;
+}
+.storeroom {
+    fill: #505050
+}
+
+.window {
+    /* fill: steelblue */
+    fill: #fff
+}
+
+.door {
+    fill: white;
+    stroke: black
+}
+
+.entrance_door {
+    /* fill: rgb(100, 10, 10) */
+    fill: #0e7231;
+}
+
+/* @keyframes spin {
+    from {
+      transform: rotateZ(0deg);
+    }
+  
+    to {
+      transform: rotateZ(360deg);
+    }
+  } */

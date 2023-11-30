@@ -1,0 +1,12 @@
+.mirroredTick text {
+	transform: rotateY(180deg);
+}
+
+.bar {
+	stroke: transparent;
+	fill: var(--fill-col);
+}
+
+.inactive {
+	fill: #6668
+}

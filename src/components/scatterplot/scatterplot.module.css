@@ -1,0 +1,27 @@
+.trendLine {
+    stroke: var(--complementary-col);
+    stroke-width: 5px;
+    /* stroke-opacity: .6; */
+}
+
+.point {
+    fill-opacity: .3;
+    fill: var(--fill-col);
+    cursor: pointer;
+    stroke: transparent;
+    stroke-width: 2px;
+    z-index: 1;
+    transition: stroke .1s ease-in;
+}
+
+.point:hover {
+    r: 10px;
+    fill-opacity: 1;
+    stroke: var(--complementary-col);
+    z-index: 100;
+}
+
+.selected {
+    fill: #d1b9a5;
+    fill-opacity: .4;
+}
